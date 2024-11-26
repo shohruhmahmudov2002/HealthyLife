@@ -17,6 +17,7 @@ class Program
         }
         catch (InvalidUserCredentialsException ex)
         {
+            Console.Clear();
             Logger.LogError(ex.Message, InvalidUserCredentialsException.Code);
         }
         finally
